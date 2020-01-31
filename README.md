@@ -54,9 +54,10 @@ values-night directory add colors.xml file
 
 * Layout
 
-    android:background="@color/colorBackground"
-    android:background="@color/colorBackground"
-
+```xml-in 
+   android:background="@color/colorBackground"
+   android:textColor="@color/textColorPrimary"
+```
 
 ```xml-in 
 <?xml version="1.0" encoding="utf-8"?>
