@@ -1,16 +1,90 @@
 # AndroidDarkAndLightTheme
 Android Dark Mode , Light Mode
 
-# Requirements
-
- minSdkVersion 19
- targetSdkVersion 29
-
 # getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 
+* First Step
 
-Res Dicrectory Add values-night file
+res/ Dicrectory Add values-night directory
 
+* Seconds Step
+
+values-night directory add colors.xml file 
+
+* colors.xml
+
+```xml-in 
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="colorBackground">#FFFFFF</color>
+</resources>
+
+```
+
+* colors.xml (night)
+
+
+```xml-in 
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="colorBackground">#000000</color>
+</resources>
+
+```
+# Third Step
+
+* Layout
+
+    android:background="@color/colorBackground"
+    android:background="@color/colorBackground"
+
+
+```xml-in 
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textColor="@color/textColorPrimary"
+        android:layout_centerInParent="true"/>
+
+
+
+    <Button
+        android:layout_below="@+id/text"
+        android:id="@+id/button_change_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_change_theme_board" />
+
+</RelativeLayout>
+
+
+```
+# Fourth Step
+
+Theme Change Mode Code 
+
+Dark Mode On = getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+
+Light Mode On = getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
 
 
@@ -47,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
 ```
 
+# Requirements
 * App/Build.Gradle
 
 ```Groovy 
