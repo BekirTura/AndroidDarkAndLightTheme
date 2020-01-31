@@ -50,9 +50,9 @@ values-night directory add colors.xml file
     <color name="colorBackground">#000000</color>
 </resources>
 ```
-# Third Step
+* Third Step
 
-* Layout
+> Layout
 
 ```xml-in 
    android:background="@color/colorBackground"
@@ -88,8 +88,9 @@ values-night directory add colors.xml file
 
 </RelativeLayout>
 ```
-# Fourth Step
-* Theme Change Mode Code 
+* Fourth Step
+
+>Theme Change Mode Code 
 
 > Dark Mode On
 ```Java
