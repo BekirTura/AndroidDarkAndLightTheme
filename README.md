@@ -6,7 +6,7 @@ Android Dark Mode , Light Mode
 ```Java
 getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 ```
- ![alt test](screenshots/add_values_night.png)
+
 * First Step
 
 ```
