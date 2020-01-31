@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidLightDarkThemeApp</string>
+    <string name="button_change_theme_board">ChangeThemeBoard</string>
+</resources>
