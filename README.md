@@ -11,7 +11,6 @@ getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 
 ```
 res/ Dicrectory Add values-night directory
-
 ```
 
 * Seconds Step
@@ -31,7 +30,6 @@ values-night directory add colors.xml file
     <color name="textColorPrimary">#000000</color>
     <color name="colorBackground">#FFFFFF</color>
 </resources>
-
 ```
 
 * colors.xml (night)
@@ -46,7 +44,6 @@ values-night directory add colors.xml file
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="colorBackground">#000000</color>
 </resources>
-
 ```
 # Third Step
 
@@ -84,17 +81,16 @@ values-night directory add colors.xml file
         android:text="@string/button_change_theme_board" />
 
 </RelativeLayout>
-
-
 ```
 # Fourth Step
 
-Theme Change Mode Code 
+* Theme Change Mode Code 
 
+```
 Dark Mode On = getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 
 Light Mode On = getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-
+```
 
 
 * Main Activity
@@ -127,10 +123,9 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-
 ```
 
-# Requirements
+# Android Version And AppCombat Version
 * App/Build.Gradle
 
 ```Groovy 
