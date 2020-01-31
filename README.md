@@ -1,15 +1,24 @@
 # AndroidDarkAndLightTheme
 Android Dark Mode , Light Mode
 
-# getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+# Change Theme With Single Line Code
+
+```Java
+getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+```
 
 * First Step
 
+```
 res/ Dicrectory Add values-night directory
+
+```
 
 * Seconds Step
 
+```
 values-night directory add colors.xml file 
+```
 
 * colors.xml
 
