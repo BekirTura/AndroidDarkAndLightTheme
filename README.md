@@ -12,12 +12,17 @@ getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 ```
 res/ Dicrectory Add values-night directory
 ```
+ ![alt test](screenshots/add_values_night.png)
 
 * Seconds Step
 
 ```
 values-night directory add colors.xml file 
 ```
+ ![alt test](screenshots/add_colors_xml_(night).png)
+ 
+ ![alt test](screenshots/finish.png)
+ 
 
 * colors.xml
 
