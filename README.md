@@ -83,13 +83,16 @@ values-night directory add colors.xml file
 </RelativeLayout>
 ```
 # Fourth Step
-
 * Theme Change Mode Code 
 
+> Dark Mode On
+```Java
+getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 ```
-Dark Mode On = getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 
-Light Mode On = getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+> Light Mode On
+```Java
+getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 ```
 
 
