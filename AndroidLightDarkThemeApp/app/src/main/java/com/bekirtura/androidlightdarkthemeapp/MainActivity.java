@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(themeLight){
+                    themeLight = false;
                     getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                    themeLight = false;
                 }else{
+                    themeLight = true;
                     getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                    themeLight = false;
                 }
             }
         });
